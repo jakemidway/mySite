@@ -1,0 +1,22 @@
+.header{
+    background-color: var(--color-accent-dark-second);
+    height: 100vh;
+    border: 1px solid var(--color-accent-dark);
+
+    &__top{
+        @include flex(row, space-between);
+        align-items: center;
+    }
+    &__nav-list{
+        @include flex(row, space-between);
+    }
+    &__nav-item{
+        margin-left: 26px;
+    }
+    &__nav-link{
+        transition: all 0.1s ease-in;
+        &:hover{
+            color: var(--color-accent);
+        }
+    }
+}

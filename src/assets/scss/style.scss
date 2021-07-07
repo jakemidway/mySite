@@ -1,3 +1,8 @@
+@import 'normalize';
+@import 'fonts';
+@import 'mixin';
+@import 'variables';
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +10,20 @@
 }
 
 body {
-    background-color: rgb(98, 174, 209);
-    color: white;
+    font-family: 'Rubik';
+    color: var(--color-text);
 }
+a{
+    color: var(--color-text);
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1760px;
+    margin: auto;
+}
+
+// blocks
+@import './blocks/header';

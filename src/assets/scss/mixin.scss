@@ -1,0 +1,49 @@
+// брейкпойнтs
+// for-phone-only               max -width 320px
+// for-tablet-portrait-up       min-width 320px
+// for-tablet-landscape-up      min-width 576px
+// for-desktop-up               min-width 768px
+// for-big-desktop-up           min-width 1280px
+ 
+@mixin for-phone-only {
+    @media (max-width: 319px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop1440-up {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
