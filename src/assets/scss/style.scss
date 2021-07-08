@@ -24,6 +24,8 @@ li{
     max-width: 1760px;
     margin: auto;
 }
-
+.font-lighter{
+    font-weight: 400;
+}
 // blocks
 @import './blocks/header';

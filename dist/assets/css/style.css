@@ -457,6 +457,10 @@ li {
   margin: auto;
 }
 
+.font-lighter {
+  font-weight: 400;
+}
+
 .header {
   background-color: var(--color-accent-dark-second);
   height: 100vh;
@@ -504,4 +508,24 @@ li {
 
 .header__nav-link:hover {
   color: var(--color-accent);
+}
+
+.header__title {
+  font-size: 64px;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  word-spacing: 6px;
+}
+
+.header__text {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.header__text .header__title_light {
+  font-size: 400;
 }

@@ -47,3 +47,11 @@
     flex-direction: $direction;
     justify-content: $justify;
 }
+
+
+$base-font-size: 16;
+@mixin font-size-rems($target-px-size) {
+    $rem-size: $target-px-size / $base-font-size;
+    font-size: $target-px-size * 1px;
+    font-size: $rem-size * 1rem;
+}
