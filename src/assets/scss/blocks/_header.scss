@@ -1,37 +1,56 @@
-.header{
-    background-color: var(--color-accent-dark-second);
-    height: 100vh;
-    border: 1px solid var(--color-accent-dark);
+.header {
+    padding-top: 50px;
 
-    &__top{
+    &__top {
         @include flex(row, space-between);
         align-items: center;
     }
-    &__nav-list{
+
+    &__nav-list {
         @include flex(row, space-between);
     }
-    &__nav-item{
-        margin-left: 26px;
+
+    &__nav-item {
+        margin-left: 55px;
     }
-    &__nav-link{
+
+    &__nav-link {
         transition: all 0.1s ease-in;
-        &:hover{
+
+        &:hover {
             color: var(--color-accent);
         }
     }
-    &__title{
-        @include font-size-rems(64);
-        letter-spacing: 4px;
-        word-spacing: 6px;
+
+    &__title {
+        @include font-size-rems(40);
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 3px;
     }
-    &__text{
+
+    &__text {
         @include font-size-rems(32);
-        font-weight: 200;
+        font-weight: 400;
         letter-spacing: 2px;
         word-spacing: 3px;
         margin-bottom: 16px;
-        .header__title_light{
-            font-size: 400;
-        }
     }
+
+    &__cutaway {
+        @include flex(row, space-between);
+        align-items: center;
+        padding-top: 130px;
+    }
+
+    &__cutaway-my-photo {
+        overflow: hidden;
+        --size: 368px;
+        width: var(--size);
+        height: var(--size);
+        text-align: center;
+        background: url(./../images/header/myfoto.png) 50% 3% / 120% no-repeat;
+    }
+
+
 }

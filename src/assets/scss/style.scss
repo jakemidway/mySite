@@ -3,7 +3,7 @@
 @import 'mixin';
 @import 'variables';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,20 +12,28 @@
 body {
     font-family: 'Rubik';
     color: var(--color-text);
+    background-color: var(--color-accent-dark-second);
 }
-a{
+
+a {
     color: var(--color-text);
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
 }
-.container{
+
+.container {
     max-width: 1760px;
     margin: auto;
+    padding: 0 20px;
 }
-.font-lighter{
-    font-weight: 400;
+
+.font-lighter {
+    font-weight: 200;
 }
+
 // blocks
 @import './blocks/header';
+@import './blocks/logo';
