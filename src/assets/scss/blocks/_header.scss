@@ -15,10 +15,30 @@
     }
 
     &__nav-link {
+        position: relative;
         transition: all 0.1s ease-in;
+
+        &:after {
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            display: block;
+            content: ' ';
+            width: 0px;
+            height: 2px;
+            background-color: var(--color-accent);
+            opacity: 0;
+            transition: all 0.2s ease-in;
+        }
 
         &:hover {
             color: var(--color-accent);
+
+            &.header__nav-link:after {
+                width: 100%;
+                left: 0;
+                opacity: 1;
+            }
         }
     }
 
@@ -52,5 +72,5 @@
         background: url(./../images/header/myfoto.png) 50% 3% / 120% no-repeat;
     }
 
-
+    
 }

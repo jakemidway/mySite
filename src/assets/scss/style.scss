@@ -30,10 +30,11 @@ li {
     padding: 0 20px;
 }
 
-.font-lighter {
-    font-weight: 200;
+.text-accent{
+    color: var(--color-accent);
 }
 
 // blocks
 @import './blocks/header';
 @import './blocks/logo';
+@import './blocks/button';

@@ -1,0 +1,12 @@
+.button{
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    background: inherit;
+    padding: 0.6rem 1.4rem;
+    border-radius: 2px;
+    @include transition-time(2);
+    &:hover{
+        background-color: var(--color-accent);
+        color: var(--color-accent-dark);
+    }
+}

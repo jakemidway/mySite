@@ -56,3 +56,6 @@ $base-font-size: 16;
     font-size: $rem-size * 1rem;
 }
 
+@mixin  transition-time($time) {
+    transition: all $time * 0.1s ease-in;
+}

@@ -459,8 +459,8 @@ li {
   padding: 0 20px;
 }
 
-.font-lighter {
-  font-weight: 200;
+.text-accent {
+  color: var(--color-accent);
 }
 
 .header {
@@ -501,13 +501,35 @@ li {
 }
 
 .header__nav-link {
+  position: relative;
   -webkit-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
 
+.header__nav-link:after {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  display: block;
+  content: ' ';
+  width: 0px;
+  height: 2px;
+  background-color: var(--color-accent);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
 .header__nav-link:hover {
   color: var(--color-accent);
+}
+
+.header__nav-link:hover.header__nav-link:after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
 }
 
 .header__title {
@@ -558,6 +580,22 @@ li {
   font-weight: 400;
   letter-spacing: 2px;
   word-spacing: 3px;
+}
+
+.button {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  background: inherit;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.button:hover {
+  background-color: var(--color-accent);
+  color: var(--color-accent-dark);
 }
 
 .webp .header__cutaway-my-photo { background: url(./../images/header/myfoto.webp) 50% 3%/120% no-repeat; }
