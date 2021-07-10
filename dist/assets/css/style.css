@@ -459,8 +459,16 @@ li {
   padding: 0 20px;
 }
 
+.font-lighter {
+  font-weight: 400;
+}
+
 .text-accent {
   color: var(--color-accent);
+}
+
+.border {
+  border: 1px solid var(--color-accent);
 }
 
 .header {
@@ -538,6 +546,7 @@ li {
   font-weight: 600;
   letter-spacing: 2px;
   word-spacing: 3px;
+  margin-bottom: 20px;
 }
 
 .header__text {
@@ -546,7 +555,7 @@ li {
   font-weight: 400;
   letter-spacing: 2px;
   word-spacing: 3px;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
 }
 
 .header__cutaway {
