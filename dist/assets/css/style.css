@@ -607,4 +607,23 @@ li {
   color: var(--color-accent-dark);
 }
 
+.connection img {
+  fill: #fff;
+  width: 200px;
+}
+
+.connection .div {
+  height: 16px;
+  fill: white;
+  background-color: white;
+  background-image: url(./../images/icons/git.svg);
+}
+
+.connection .div2 {
+  height: 16px;
+  fill: white;
+  background-color: white;
+  background-image: url(./../images/sprite/icons.svg#git);
+}
+
 .webp .header__cutaway-my-photo { background: url(./../images/header/myfoto.webp) 50% 3%/120% no-repeat; }
