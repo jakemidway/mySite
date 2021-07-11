@@ -55,6 +55,8 @@ let path = {
 		img: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp}"
 	},
 	clean: "./" + distPath
+	// clean: [distPath, "!" + distPath + "assets/images/icons/icons.svg"]
+	// clean: [distPath, "!" distPath + "assets/images/"]
 }
 
 
@@ -159,18 +161,19 @@ function fonts() {
 }
 
 
-
+// SVG!!
 gulp.task('svgSprite', function () {
 	return gulp.src([srcPath + '/iconsprite/*.svg'])
 		.pipe(svgSprite({
 			mode: {
 				stack: {
-					sprite: "../icons/icons.svg",
+					sprite: "../sprite/icons.svg",
 					// example: true
 				}
 			}
 		}))
-		.pipe(dest(path.build.img))
+		// .pipe(dest(path.build.img))
+		.pipe(dest([srcPath + 'assets/images/']))
 })
 
 
