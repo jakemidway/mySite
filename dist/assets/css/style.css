@@ -454,7 +454,7 @@ li {
 }
 
 .container {
-  max-width: 1760px;
+  max-width: 1290px;
   margin: auto;
   padding: 0 20px;
 }
@@ -607,23 +607,25 @@ li {
   color: var(--color-accent-dark);
 }
 
-.connection img {
-  fill: #fff;
-  width: 200px;
+.social {
+  width: 246px;
 }
 
-.connection .div {
-  height: 16px;
-  fill: white;
-  background-color: white;
-  background-image: url(./../images/icons/git.svg);
+.social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.connection .div2 {
-  height: 16px;
-  fill: white;
-  background-color: white;
-  background-image: url(./../images/sprite/icons.svg#git);
+.social__ico {
+  fill: lawngreen;
 }
 
 .webp .header__cutaway-my-photo { background: url(./../images/header/myfoto.webp) 50% 3%/120% no-repeat; }
