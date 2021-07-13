@@ -8,6 +8,7 @@
 
     &__nav-list {
         @include flex(row, space-between);
+        font-size: px-to-rem(17);
     }
 
     &__nav-item {

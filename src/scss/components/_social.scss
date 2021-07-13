@@ -1,10 +1,7 @@
 .social{
-    width: 246px;
+    width: px-to-rem(246);
     &__item{
         @include flex(row, space-between);
-    }
-    &__ico{
-        fill: lawngreen;
     }
 }
 
