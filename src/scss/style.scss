@@ -12,14 +12,22 @@
 @import './layout/containers';
 
 
+//elements; - small BEM  blocks
+@import 'elements/logo';
+@import 'elements/button';
+
+
+//components; - middle BEM blocks
+@import 'components/header';
+@import 'components/social';
+// @import 'components/footer';
+// @import 'components/modal';
+
 
 // sections - big BEM  blocks
 @import 'sections/cutaway';
 
 
 
-@import './blocks/header';
-@import './blocks/logo';
-@import './blocks/button';
-@import './blocks/social';
+
 

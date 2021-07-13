@@ -18,7 +18,8 @@
     &__content {
         @include flex(row, space-between);
         align-items: center;
-        padding-top: px-to-rem(130);
+        padding: px-to-rem(130) 0 px-to-rem(124);
+
     }
     
     &__cutaway-my-photo {
@@ -28,6 +29,11 @@
         height: var(--size);
         text-align: center;
         background: url(./../images/header/myfoto.png) 50% 3% / 120% no-repeat;
+    }
+    &__connection{
+        @include flex(row, space-between);
+        align-items: baseline;
+        font-size: px-to-rem(17);
     }
 }
 
