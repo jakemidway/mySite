@@ -384,7 +384,7 @@ template {
 
 :root {
   --color-text: #FFF;
-  --color-accent: #FFC576;
+  --color-accent: #ffc675;
   --color-accent-dark: #1F2336;
   --color-accent-dark-second: #202437;
 }
@@ -475,6 +475,21 @@ li {
   max-width: 1290px;
   margin: auto;
   padding: 0 1.25rem;
+}
+
+#sphere-wrap {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
+
+#sphere {
+  width: 100%;
+  height: 100%;
+  background-image: url("bg.jpg");
+  background-size: cover;
 }
 
 .logo__text {
@@ -587,6 +602,14 @@ li {
           justify-content: space-between;
 }
 
+.social__ico {
+  height: 1.625rem;
+}
+
+.cutaway {
+  position: relative;
+}
+
 .cutaway__title {
   font-size: 2.5rem;
   font-weight: 600;
@@ -645,5 +668,7 @@ li {
           align-items: baseline;
   font-size: 1.0625rem;
 }
+
+.webp #sphere { background-image: url(bg.webp); }
 
 .webp .cutaway__cutaway-my-photo { background: url(./../images/header/myfoto.webp) 50% 3%/120% no-repeat; }

@@ -3,5 +3,8 @@
     &__item{
         @include flex(row, space-between);
     }
+    &__ico{
+        height: px-to-rem(26);
+    }
 }
 
