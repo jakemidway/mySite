@@ -1,5 +1,5 @@
 .header {
-    padding-top: 50px;
+    padding-top: px-to-rem(50);
 
     &__top {
         @include flex(row, space-between);
@@ -11,7 +11,7 @@
     }
 
     &__nav-item {
-        margin-left: 55px;
+        margin-left: px-to-rem(55);
     }
 
     &__nav-link {
@@ -20,12 +20,12 @@
 
         &:after {
             position: absolute;
-            bottom: -3px;
+            bottom: px-to-rem(-3);
             left: 50%;
             display: block;
             content: ' ';
-            width: 0px;
-            height: 2px;
+            width: 0;
+            height: px-to-rem(2);
             background-color: var(--color-accent);
             opacity: 0;
             transition: all 0.2s ease-in;
@@ -42,36 +42,6 @@
         }
     }
 
-    &__title {
-        @include font-size-rems(40);
-        font-weight: 600;
-        letter-spacing: 2px;
-        word-spacing: 3px;
-        margin-bottom: 20px;
-    }
-
-    &__text {
-        @include font-size-rems(32);
-        font-weight: 400;
-        letter-spacing: 2px;
-        word-spacing: 3px;
-        margin-bottom: 26px;
-    }
-
-    &__cutaway {
-        @include flex(row, space-between);
-        align-items: center;
-        padding-top: 130px;
-    }
-
-    &__cutaway-my-photo {
-        overflow: hidden;
-        --size: 368px;
-        width: var(--size);
-        height: var(--size);
-        text-align: center;
-        background: url(./../images/header/myfoto.png) 50% 3% / 120% no-repeat;
-    }
-
+    
     
 }

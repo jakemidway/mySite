@@ -1,0 +1,33 @@
+.cutaway{
+    &__title {
+        font-size: px-to-rem(40);
+        font-weight: 600;
+        letter-spacing: px-to-rem(2);
+        word-spacing: px-to-rem(3);
+        margin-bottom: px-to-rem(20);
+    }
+    
+    &__text {
+        font-size: px-to-rem(32);
+        font-weight: 400;
+        letter-spacing: px-to-rem(2);
+        word-spacing: px-to-rem(3);
+        margin-bottom: px-to-rem(26);
+    }
+    
+    &__content {
+        @include flex(row, space-between);
+        align-items: center;
+        padding-top: px-to-rem(130);
+    }
+    
+    &__cutaway-my-photo {
+        overflow: hidden;
+        --size: #{px-to-rem(368)};
+        width: var(--size);
+        height: var(--size);
+        text-align: center;
+        background: url(./../images/header/myfoto.png) 50% 3% / 120% no-repeat;
+    }
+}
+

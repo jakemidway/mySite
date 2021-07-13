@@ -382,6 +382,13 @@ template {
   display: none;
 }
 
+:root {
+  --color-text: #FFF;
+  --color-accent: #FFC576;
+  --color-accent-dark: #1F2336;
+  --color-accent-dark-second: #202437;
+}
+
 @font-face {
   font-family: 'Rubik';
   src: url(./../fonts/Rubik-Regular.ttf);
@@ -430,13 +437,6 @@ template {
   font-display: swap;
 }
 
-:root {
-  --color-text: hsl(0, 0%, 100%);
-  --color-accent: hsl(35, 100%, 73%);
-  --color-accent-dark: hsl(233, 25%, 26%);
-  --color-accent-dark-second: hsl(230, 27%, 17%);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -459,12 +459,6 @@ li {
   list-style: none;
 }
 
-.container {
-  max-width: 1290px;
-  margin: auto;
-  padding: 0 20px;
-}
-
 .font-lighter {
   font-weight: 400;
 }
@@ -477,8 +471,56 @@ li {
   border: 1px solid var(--color-accent);
 }
 
+.container {
+  max-width: 1290px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.cutaway__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  word-spacing: 0.1875rem;
+  margin-bottom: 1.25rem;
+}
+
+.cutaway__text {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  word-spacing: 0.1875rem;
+  margin-bottom: 1.625rem;
+}
+
+.cutaway__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8.125rem;
+}
+
+.cutaway__cutaway-my-photo {
+  overflow: hidden;
+  --size: 23rem;
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  background: url(./../images/header/myfoto.png) 50% 3%/120% no-repeat;
+}
+
 .header {
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 
 .header__top {
@@ -511,7 +553,7 @@ li {
 }
 
 .header__nav-item {
-  margin-left: 55px;
+  margin-left: 3.4375rem;
 }
 
 .header__nav-link {
@@ -523,12 +565,12 @@ li {
 
 .header__nav-link:after {
   position: absolute;
-  bottom: -3px;
+  bottom: -0.1875rem;
   left: 50%;
   display: block;
   content: ' ';
-  width: 0px;
-  height: 2px;
+  width: 0;
+  height: 0.125rem;
   background-color: var(--color-accent);
   opacity: 0;
   -webkit-transition: all 0.2s ease-in;
@@ -544,50 +586,6 @@ li {
   width: 100%;
   left: 0;
   opacity: 1;
-}
-
-.header__title {
-  font-size: 40px;
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  word-spacing: 3px;
-  margin-bottom: 20px;
-}
-
-.header__text {
-  font-size: 32px;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  word-spacing: 3px;
-  margin-bottom: 26px;
-}
-
-.header__cutaway {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 130px;
-}
-
-.header__cutaway-my-photo {
-  overflow: hidden;
-  --size: 368px;
-  width: var(--size);
-  height: var(--size);
-  text-align: center;
-  background: url(./../images/header/myfoto.png) 50% 3%/120% no-repeat;
 }
 
 .logo__text {
@@ -634,4 +632,4 @@ li {
   fill: lawngreen;
 }
 
-.webp .header__cutaway-my-photo { background: url(./../images/header/myfoto.webp) 50% 3%/120% no-repeat; }
+.webp .cutaway__cutaway-my-photo { background: url(./../images/header/myfoto.webp) 50% 3%/120% no-repeat; }
