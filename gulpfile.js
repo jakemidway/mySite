@@ -34,25 +34,25 @@ let path = {
 	build: {
 		/* В эти папки будут собираться файлы */
 		html: distPath,
-		css: distPath + "assets/css/",
-		js: distPath + "assets/js/",
-		img: distPath + "assets/images/",
-		fonts: distPath + "assets/fonts/",
+		css: distPath + "css/",
+		js: distPath + "js/",
+		img: distPath + "images/",
+		fonts: distPath + "fonts/",
 	},
 	/* Исходные файлы. С этими файлами мы будем работать */
 	src: {
-		html: [srcPath + "*.html", "!" + srcPath + "_*.html"],
-		scss: srcPath + "assets/scss/style.scss",
-		js: srcPath + "assets/js/script.js",
-		img: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp}",
-		fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+		html: [srcPath + "*.html", "!" + srcPath + "_*.html", srcPath + "pages/*.html", "!" + srcPath + "pages/_*.html"],
+		scss: srcPath + "scss/style.scss",
+		js: srcPath + "js/script.js",
+		img: srcPath + "images/**/*.{jpg,png,svg,gif,ico,webp}",
+		fonts: srcPath + "fonts/**/*.{eot,woff,woff2,ttf,svg}",
 	},
 	/* За этими файлами мы будем следить. При изменении этих файлов бдет перезагружаться браузер */
 	watch: {
 		html: srcPath + "**/*.html",
-		css: srcPath + "assets/scss/**/*.scss",
-		js: srcPath + "assets/js/**/*.js",
-		img: srcPath + "assets/img/**/*.{jpg,png,svg,gif,ico,webp}"
+		css: srcPath + "scss/**/*.scss",
+		js: srcPath + "js/**/*.js",
+		img: srcPath + "img/**/*.{jpg,png,svg,gif,ico,webp}"
 	},
 	clean: "./" + distPath
 	// clean: [distPath, "!" + distPath + "assets/images/icons/icons.svg"]

@@ -31,5 +31,14 @@
   "dependencies": {
     "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^2.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakemidway/mySite.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jakemidway/mySite/issues"
+  },
+  "homepage": "https://github.com/jakemidway/mySite#readme"
 }

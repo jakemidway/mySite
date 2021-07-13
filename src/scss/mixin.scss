@@ -56,6 +56,11 @@ $base-font-size: 16;
     font-size: $rem-size * 1rem;
 }
 
+@function px-to-rem($px-val) {
+    $rem: $px-val/16;
+    @return ($rem * 1rem);
+}
+
 @mixin  transition-time($time) {
     transition: all $time * 0.1s ease-in;
 }
