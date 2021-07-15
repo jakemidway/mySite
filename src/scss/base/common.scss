@@ -10,6 +10,11 @@ body {
     background-color: var(--color-accent-dark-second);
 }
 
+h2{
+    font-size: px-to-rem(36);
+    font-weight: 700;
+}
+
 a {
     color: var(--color-text);
     text-decoration: none;

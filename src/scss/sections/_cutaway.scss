@@ -1,5 +1,6 @@
 .cutaway {
     position: relative;
+    padding-bottom: px-to-rem(100);
     &__title {
         font-size: px-to-rem(40);
         font-weight: 600;
@@ -36,5 +37,14 @@
         @include flex(row, space-between);
         align-items: baseline;
         font-size: px-to-rem(17);
+    }
+
+    &__mail{
+        position: relative;
+        transition: all 0.1s ease-in;
+
+        &:hover {
+            color: var(--color-accent);
+        }
     }
 }

@@ -450,6 +450,11 @@ body {
   background-color: var(--color-accent-dark-second);
 }
 
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
 a {
   color: var(--color-text);
   text-decoration: none;
@@ -505,14 +510,20 @@ li {
   background: inherit;
   padding: 0.6rem 1.4rem;
   border-radius: 2px;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .button:hover {
   background-color: var(--color-accent);
   color: var(--color-accent-dark);
+}
+
+.button:active {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  background: inherit;
 }
 
 .header {
@@ -608,6 +619,7 @@ li {
 
 .cutaway {
   position: relative;
+  padding-bottom: 6.25rem;
 }
 
 .cutaway__title {
@@ -667,6 +679,48 @@ li {
       -ms-flex-align: baseline;
           align-items: baseline;
   font-size: 1.0625rem;
+}
+
+.cutaway__mail {
+  position: relative;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.cutaway__mail:hover {
+  color: var(--color-accent);
+}
+
+.skills {
+  padding: 6.25rem 0;
+}
+
+.skills__title {
+  margin-bottom: 3.0625rem;
+}
+
+.skills__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 10.1875rem;
+}
+
+.skills__item {
+  font-size: 1.5rem;
+  margin-right: 5.1875rem;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .webp #sphere { background-image: url(bg.webp); }

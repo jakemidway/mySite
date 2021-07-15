@@ -1,0 +1,16 @@
+.skills{
+    padding: px-to-rem(100) 0;
+    &__title{
+        margin-bottom: px-to-rem(49);
+    }
+    &__list{
+        @include flex(row, flex-start);
+        flex-wrap: wrap;
+        height: px-to-rem(163);
+    }
+    &__item{
+        font-size: px-to-rem(24);
+        margin-right: px-to-rem(83);
+        align-self: center;
+    }
+}
