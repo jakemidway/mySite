@@ -527,6 +527,7 @@ li {
 }
 
 .header {
+  position: relative;
   padding-top: 3.125rem;
 }
 
@@ -546,22 +547,43 @@ li {
           align-items: center;
 }
 
+.header__btn-nav {
+  background-color: white;
+  border: none;
+  --size-btn: 1.25rem;
+  height: var(--size-btn);
+  width: var(--size-btn);
+}
+
+.header__btn-nav:hover {
+  background-color: var(--color-accent);
+}
+
+.header__btn-nav:active {
+  background-color: var(--color-text);
+}
+
 .header__nav-list {
+  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  z-index: 100;
+  top: 3.125rem;
+  right: 1.25rem;
   font-size: 1.0625rem;
 }
 
 .header__nav-item {
-  margin-left: 3.4375rem;
+  margin-bottom: 0.625rem;
 }
 
 .header__nav-link {
@@ -713,14 +735,57 @@ li {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 10.1875rem;
+  width: 80%;
 }
 
 .skills__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.5rem;
   margin-right: 5.1875rem;
-  -ms-flex-item-align: center;
-      align-self: center;
+  margin-bottom: 3.0625rem;
+  height: 3.5625rem;
+}
+
+.skills__ico {
+  margin-right: 1.125rem;
+}
+
+.skills__ico {
+  -webkit-transform: translateY(7%);
+      -ms-transform: translateY(7%);
+          transform: translateY(7%);
+}
+
+@media (min-width: 768px) {
+  .header__btn-nav {
+    display: none;
+  }
+
+  .header__nav-list {
+    visibility: visible;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: static;
+  }
+
+  .header__nav-item {
+    margin-left: 3.4375rem;
+    margin-bottom: 0;
+  }
 }
 
 .webp #sphere { background-image: url(bg.webp); }

@@ -1,16 +1,32 @@
-.skills{
+.skills {
     padding: px-to-rem(100) 0;
-    &__title{
+
+    &__title {
         margin-bottom: px-to-rem(49);
     }
-    &__list{
+
+    &__list {
         @include flex(row, flex-start);
         flex-wrap: wrap;
-        height: px-to-rem(163);
+        width: 80%;
+        // height: px-to-rem(163);
     }
-    &__item{
+
+    &__item {
+        @include flex(row, flex-start);
+        align-items: center;
         font-size: px-to-rem(24);
         margin-right: px-to-rem(83);
-        align-self: center;
+        margin-bottom: px-to-rem(49);
+        height: px-to-rem(57);
+
+    }
+
+    &__ico {
+        margin-right: px-to-rem(18);
+    }
+
+    &__ico {
+        transform: translateY(7%);
     }
 }

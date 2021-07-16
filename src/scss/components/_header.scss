@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     padding-top: px-to-rem(50);
 
     &__top {
@@ -6,13 +7,56 @@
         align-items: center;
     }
 
+    &__nav {
+        
+
+        @include for-desktop-up {
+            
+        }
+    }
+
+    &__btn-nav{
+        background-color: white;
+        border: none;
+        --size-btn: #{px-to-rem(20)};
+        height: var(--size-btn);
+        width: var(--size-btn);
+        
+        @include for-desktop-up{
+            display: none;
+        }
+
+        &:hover{
+            background-color: var(--color-accent);
+        }
+        &:active{
+            background-color: var(--color-text);
+        }
+    }
+
     &__nav-list {
-        @include flex(row, space-between);
+        visibility: hidden;
+        @include flex(column, space-between);
+        position: absolute;
+        z-index: 100;
+        top: px-to-rem(50);
+        right: px-to-rem(20);
         font-size: px-to-rem(17);
+
+        @include for-desktop-up {
+            visibility: visible;
+            flex-direction: row;
+            position: static;    
+        }
     }
 
     &__nav-item {
-        margin-left: px-to-rem(55);
+        margin-bottom: px-to-rem(10);
+        @include for-desktop-up {
+            margin-left: px-to-rem(55);
+            margin-bottom: 0;
+        }
+        
     }
 
     &__nav-link {
@@ -43,6 +87,6 @@
         }
     }
 
-    
-    
+
+
 }

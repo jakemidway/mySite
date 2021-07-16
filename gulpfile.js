@@ -43,7 +43,7 @@ let path = {
 	src: {
 		html: [srcPath + "*.html", "!" + srcPath + "_*.html", srcPath + "pages/*.html", "!" + srcPath + "pages/_*.html"],
 		scss: srcPath + "scss/style.scss",
-		js: srcPath + "js/script.js",
+		js: srcPath + "js/*.js",
 		img: srcPath + "images/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: srcPath + "fonts/**/*.{eot,woff,woff2,ttf,svg}",
 	},
