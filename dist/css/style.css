@@ -768,6 +768,33 @@ li {
           transform: translateY(7%);
 }
 
+.did {
+  padding: 6.25rem 0;
+}
+
+.did__title {
+  margin-bottom: 3.0625rem;
+}
+
+.did__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.did__item {
+  margin-right: 5.1875rem;
+}
+
+.did__img {
+  margin-bottom: 1.5rem;
+}
+
+.did__text {
+  font-size: 1.625rem;
+  font-weight: 500;
+}
+
 @media (min-width: 768px) {
   .header__btn-nav {
     display: none;

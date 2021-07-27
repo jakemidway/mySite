@@ -1,0 +1,21 @@
+.did {
+    padding: px-to-rem(100) 0;
+
+    &__title {
+        margin-bottom: px-to-rem(49);
+    }
+    &__list{
+        display: flex;
+
+    }
+    &__item{
+        margin-right: px-to-rem(83);
+    }
+    &__img{
+        margin-bottom: px-to-rem(24);
+    }
+    &__text{
+        font-size: px-to-rem(26);
+        font-weight: 500;
+    }
+}
