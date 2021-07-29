@@ -4,4 +4,13 @@
     &__title {
         margin-bottom: px-to-rem(49);
     }
+    &__item{
+        margin-bottom: px-to-rem(30);
+    }
+    &__period{
+        font-size: px-to-rem(26);
+        font-weight: 500;
+        margin-bottom: px-to-rem(18);
+    }
+    
 }

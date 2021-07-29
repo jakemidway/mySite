@@ -800,6 +800,16 @@ li {
   margin-bottom: 3.0625rem;
 }
 
+.experience__item {
+  margin-bottom: 1.875rem;
+}
+
+.experience__period {
+  font-size: 1.625rem;
+  font-weight: 500;
+  margin-bottom: 1.125rem;
+}
+
 @media (min-width: 768px) {
   .header__btn-nav {
     display: none;
