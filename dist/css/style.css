@@ -385,7 +385,7 @@ template {
 :root {
   --color-text: #FFF;
   --color-accent: #ffc675;
-  --color-accent-dark: #1F2336;
+  --color-accent-dark: #1f2336;
   --color-accent-dark-second: #202437;
 }
 
@@ -448,6 +448,7 @@ body {
   font-family: 'Rubik';
   color: var(--color-text);
   background-color: var(--color-accent-dark-second);
+  font-size: 1.0625rem;
 }
 
 h2 {
@@ -808,6 +809,67 @@ li {
   font-size: 1.625rem;
   font-weight: 500;
   margin-bottom: 1.125rem;
+}
+
+.contact {
+  padding: 6.25rem 0;
+}
+
+.contact__title {
+  margin-bottom: 1.875rem;
+}
+
+.contact__text {
+  font-size: 2.0625rem;
+  margin-bottom: 1.875rem;
+}
+
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__left-side {
+  width: 50%;
+}
+
+.contact__right-side {
+  width: 50%;
+  background-color: #fff;
+  color: #1f2336;
+}
+
+.contact__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact__mail {
+  margin-right: 6.6875rem;
+}
+
+.contact__text-for-link {
+  margin-bottom: 0.625rem;
+}
+
+.contact__link-mail {
+  font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {

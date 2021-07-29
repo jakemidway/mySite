@@ -1,0 +1,36 @@
+.contact{
+    padding: px-to-rem(100) 0;
+
+    &__title{
+        margin-bottom: px-to-rem(30);
+    }
+
+    &__text{
+        font-size: px-to-rem(33);
+        margin-bottom: px-to-rem(30);
+    }
+    &__wrapper{
+        @include flex(row, space-between);
+        
+    }
+    &__left-side{
+        width: 50%;
+    }
+    &__right-side{
+        width: 50%;
+        background-color: #fff;
+        color: $colorAccentDark;
+    }
+    &__links{
+        @include flex(row, flex-start);
+    }
+    &__mail{
+        margin-right: px-to-rem(107);
+    }
+    &__text-for-link{
+        margin-bottom: px-to-rem(10);
+    }
+    &__link-mail{
+        font-size: px-to-rem(20);
+    }
+}
