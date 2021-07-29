@@ -760,9 +760,6 @@ li {
 
 .skills__ico {
   margin-right: 1.125rem;
-}
-
-.skills__ico {
   -webkit-transform: translateY(7%);
       -ms-transform: translateY(7%);
           transform: translateY(7%);
@@ -793,6 +790,14 @@ li {
 .did__text {
   font-size: 1.625rem;
   font-weight: 500;
+}
+
+.experience {
+  padding: 6.25rem 0;
+}
+
+.experience__title {
+  margin-bottom: 3.0625rem;
 }
 
 @media (min-width: 768px) {
