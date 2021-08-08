@@ -638,6 +638,49 @@ li {
 
 .social__ico {
   height: 1.625rem;
+  width: 1.625rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social__ico_linkedin {
+  background-image: url("./../../images/icons/linkedin.svg");
+}
+
+.social__ico_linkedin:hover {
+  background-image: url("./../../images/icons/linkedin-copy.svg");
+}
+
+.social__ico_git {
+  background-image: url("./../../images/icons/git.svg");
+}
+
+.social__ico_git:hover {
+  background-image: url("./../../images/icons/git-copy.svg");
+}
+
+.social__ico_viber {
+  background-image: url("./../../images/icons/viber.svg");
+}
+
+.social__ico_viber:hover {
+  background-image: url("./../../images/icons/viber-copy.svg");
+}
+
+.social__ico_instagram {
+  background-image: url("./../../images/icons/instagram.svg");
+}
+
+.social__ico_instagram:hover {
+  background-image: url("./../../images/icons/instagram-copy.svg");
+}
+
+.social__ico_facebook {
+  background-image: url("./../../images/icons/facebook.svg");
+}
+
+.social__ico_facebook:hover {
+  background-image: url("./../../images/icons/facebook-copy.svg");
 }
 
 .cutaway {

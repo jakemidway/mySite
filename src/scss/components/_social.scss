@@ -1,14 +1,21 @@
-.social{
+.social {
     width: px-to-rem(246);
-    &__item{
+
+    &__item {
         @include flex(row, space-between);
     }
-    &__ico{
-        height: px-to-rem(26);
-        // &:hover{
-            
-        // }
-    }
-    
-}
 
+    &__ico {
+        height: px-to-rem(26);
+        width: px-to-rem(26);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include social-ico(linkedin);
+        @include social-ico(git);
+        @include social-ico(viber);
+        @include social-ico(instagram);
+        @include social-ico(facebook);
+    }
+
+}

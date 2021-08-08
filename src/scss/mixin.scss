@@ -49,12 +49,12 @@
 }
 
 
-$base-font-size: 16;
-@mixin font-size-rems($target-px-size) {
-    $rem-size: $target-px-size / $base-font-size;
-    font-size: $target-px-size * 1px;
-    font-size: $rem-size * 1rem;
-}
+// $base-font-size: 16;
+// @mixin font-size-rems($target-px-size) {
+//     $rem-size: $target-px-size / $base-font-size;
+//     font-size: $target-px-size * 1px;
+//     font-size: $rem-size * 1rem;
+// }
 
 @function px-to-rem($px-val) {
     $rem: $px-val/16;
@@ -63,4 +63,14 @@ $base-font-size: 16;
 
 @mixin  transition-time($time) {
     transition: all $time * 0.1s ease-in;
+}
+
+@mixin social-ico($soc) {
+    &_#{$soc} {
+        background-image: url("./../../images/icons/#{$soc}.svg");
+
+        &:hover {
+            background-image: url("./../../images/icons/#{$soc}-copy.svg");
+        }
+    }
 }
