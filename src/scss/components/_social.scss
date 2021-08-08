@@ -10,6 +10,7 @@
         width: px-to-rem(26);
         background-repeat: no-repeat;
         background-size: contain;
+        transition: all 0.3s;
 
         @include social-ico(linkedin);
         @include social-ico(git);

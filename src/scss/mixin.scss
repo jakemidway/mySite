@@ -67,10 +67,10 @@
 
 @mixin social-ico($soc) {
     &_#{$soc} {
-        background-image: url("./../../images/icons/#{$soc}.svg");
+        background-image: url("./../images/icons/#{$soc}.svg");
 
         &:hover {
-            background-image: url("./../../images/icons/#{$soc}-copy.svg");
+            background-image: url("./../images/icons/#{$soc}-copy.svg");
         }
     }
 }
