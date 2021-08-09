@@ -32,11 +32,13 @@
 
 
 // sections - big BEM  blocks
+@import './libraries/bg';
 @import 'sections/cutaway';
 @import './sections/skills';
 @import './sections/did';
 @import './sections/experience';
 @import './sections/contact';
+
 
 
 

@@ -484,7 +484,7 @@ li {
 }
 
 #sphere-wrap {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100%;
   width: 100%;
@@ -706,8 +706,50 @@ li {
   text-align: center;
 }
 
-.forma {
+.form {
   color: #1f2336;
+  padding: 3.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__inpt {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.875rem;
+  border: none;
+  border-bottom: 1px solid #1f2336;
+}
+
+.form__textarea {
+  resize: none;
+}
+
+.form__btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0.5625rem 0.75rem 0.4375rem;
+  background-color: #1f2336;
+  border: 1px solid #1f2336;
+  color: #ffc675;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+
+.form__btn:hover {
+  border: 1px solid #ffc675;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
 }
 
 .cutaway {
@@ -905,6 +947,9 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact__left-side {

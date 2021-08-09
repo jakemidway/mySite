@@ -11,6 +11,7 @@
     }
     &__wrapper{
         @include flex(row, space-between);
+        align-items: center;
         
     }
     &__left-side{

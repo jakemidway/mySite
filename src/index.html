@@ -10,10 +10,12 @@
 </head>
 
 <body>
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
 
+    
+    
+    <div id="sphere-wrap">
+        <canvas id="sphere"></canvas>
+    </div>
 
 
     <header class="header">
@@ -78,9 +80,7 @@
                 <a class="cutaway__mail" href="jakemidway@gmail.com" type="mail">jakemidway@gmail.com</a>
             </div>
         </div>
-        <div id="sphere-wrap">
-            <canvas id="sphere"></canvas>
-        </div>
+        
     </section>
 
 
@@ -178,7 +178,15 @@
                     </div>
                 </div>
                 <div class="contact__right-side">
-                    <form class="forma" action="mail">forma</form>
+                    <form class="form" action="mail">
+                        
+                        <input class="form__inpt" type="text" name="name" placeholder="Youre name" required>
+                        <input class="form__inpt" type="email" name="emailAddres" placeholder="Youre email adress" required>
+                        
+                        <textarea class="form__inpt form__textarea" name="message" id=""  rows="4" placeholder="Your project description"  required></textarea>
+
+                        <button class="form__btn" type="submit">GO</button>
+                    </form>
                 </div>
             </div>
         </div>
