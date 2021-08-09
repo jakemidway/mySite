@@ -19,7 +19,9 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                @@include('./_blocks/_logo.html')
+                <div class="logo">
+                    <a href="index.html"><h1 class="logo__text">&#60;head<span class="text-accent">e</span>r&#62;</h1></a> 
+                </div>
                 <nav class="header__nav">
                     <button class="header__btn-nav">X</button>
                     <ul class="header__nav-list">
@@ -50,28 +52,29 @@
                 <div class="cutaway__cutaway-my-photo"></div>
             </div>
             <div class="cutaway__connection">
-                <div class="social">
+                
+                <div class="social social_big-size">
                     <ul class="social__list">
                         <li class="social__item">
                             <a href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BC%D0%B5%D0%B4%D0%B2%D0%B5%D1%86%D0%BA%D0%B8%D0%B9/" class="social__link" target="_blank">
-                                <div class="social__ico social__ico_linkedin" alt="link to linkedin"></div>
+                                <div class="social__ico social__ico_big-size social__ico_linkedin" alt="link to linkedin"></div>
                             </a>
                             <a href="https://github.com/jakemidway" class="social__link" target="_blank">
-                                <div class="social__ico social__ico_git" alt="link to git"></div>
+                                <div class="social__ico social__ico_big-size social__ico_git" alt="link to git"></div>
                             </a>
                             <a href="viber://chat?number=%2B375447925461" class="social__link" target="_blank">
-                                <div class="social__ico social__ico_viber" alt="link to viber"></div>
+                                <div class="social__ico social__ico_big-size social__ico_viber" alt="link to viber"></div>
                             </a>
                             <a href="https://www.instagram.com/jakemidway/" class="social__link" target="_blank">
-                                <div class="social__ico social__ico_instagram" alt="link to instagram"></div>
+                                <div class="social__ico social__ico_big-size social__ico_instagram" alt="link to instagram"></div>
                             </a>
                             <a href="https://www.facebook.com/jake.midway/" class="social__link" target="_blank">
-                                <div class="social__ico social__ico_facebook" alt="link to facebook"></div>
+                                <div class="social__ico social__ico_big-size social__ico_facebook" alt="link to facebook"></div>
                             </a>
                         </li>
                     </ul>
                 </div>
-                
+
                 <a class="cutaway__mail" href="jakemidway@gmail.com" type="mail">jakemidway@gmail.com</a>
             </div>
         </div>
@@ -150,14 +153,24 @@
                         </div>
                         <div class="contact__soc">
                             <p class="contact__text-for-link">Fallow me</p>
-                            <div class="social">
+                            <div class="social social_little-size">
                                 <ul class="social__list">
                                     <li class="social__item">
-                                        <a href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BC%D0%B5%D0%B4%D0%B2%D0%B5%D1%86%D0%BA%D0%B8%D0%B9/" class="social__link" target="_blank"><img class="social__ico" src="./images/icons/linkedin.svg" alt="link to linkedin"></a>
-                                        <a href="https://github.com/jakemidway" class="social__link" target="_blank"><img class="social__ico" src="./images/icons/git.svg" alt="link to git"></a>
-                                        <a href="viber://chat?number=%2B375447925461" class="social__link" target="_blank"><img class="social__ico" src="./images/icons/viber.svg" alt="link to viber"></a>
-                                        <a href="https://www.instagram.com/jakemidway/" class="social__link" target="_blank"><img class="social__ico" src="./images/icons/instagram.svg" alt="link to instagram"></a>
-                                        <a href="https://www.facebook.com/jake.midway/" class="social__link" target="_blank"><img class="social__ico" src="./images/icons/facebook.svg" alt="link to facebook"></a>
+                                        <a href="https://www.linkedin.com/in/%D0%B5%D0%B2%D0%B3%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BC%D0%B5%D0%B4%D0%B2%D0%B5%D1%86%D0%BA%D0%B8%D0%B9/" class="social__link" target="_blank">
+                                            <div class="social__ico social__ico_little-size social__ico_linkedin" alt="link to linkedin"></div>
+                                        </a>
+                                        <a href="https://github.com/jakemidway" class="social__link" target="_blank">
+                                            <div class="social__ico social__ico_little-size social__ico_git" alt="link to git"></div>
+                                        </a>
+                                        <a href="viber://chat?number=%2B375447925461" class="social__link" target="_blank">
+                                            <div class="social__ico social__ico_little-size social__ico_viber" alt="link to viber"></div>
+                                        </a>
+                                        <a href="https://www.instagram.com/jakemidway/" class="social__link" target="_blank">
+                                            <div class="social__ico social__ico_little-size social__ico_instagram" alt="link to instagram"></div>
+                                        </a>
+                                        <a href="https://www.facebook.com/jake.midway/" class="social__link" target="_blank">
+                                            <div class="social__ico social__ico_little-size social__ico_facebook" alt="link to facebook"></div>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -165,12 +178,21 @@
                     </div>
                 </div>
                 <div class="contact__right-side">
-                    <form action="mail">forma</form>
+                    <form class="forma" action="mail">forma</form>
                 </div>
             </div>
         </div>
         
     </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <p class="footer__copywrite">Copiright &#169; 2021. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
         
     <script src="./js/script.js"></script>

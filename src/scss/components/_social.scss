@@ -1,13 +1,19 @@
 .social {
-    width: px-to-rem(246);
+    
+    &_big-size{
+        width: px-to-rem(246);
+    }
+    
+    &_little-size{
+        width: px-to-rem(192);
+    }
 
     &__item {
         @include flex(row, space-between);
     }
 
     &__ico {
-        height: px-to-rem(26);
-        width: px-to-rem(26);
+
         background-repeat: no-repeat;
         background-size: contain;
         transition: all 0.3s;
@@ -17,6 +23,16 @@
         @include social-ico(viber);
         @include social-ico(instagram);
         @include social-ico(facebook);
+
+        &_big-size {
+            height: px-to-rem(26);
+            width: px-to-rem(26);
+        }
+
+        &_little-size {
+            height: px-to-rem(20);
+            width: px-to-rem(20);
+        }
     }
 
 }

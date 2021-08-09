@@ -619,8 +619,12 @@ li {
   opacity: 1;
 }
 
-.social {
+.social_big-size {
   width: 15.375rem;
+}
+
+.social_little-size {
+  width: 12rem;
 }
 
 .social__item {
@@ -637,8 +641,6 @@ li {
 }
 
 .social__ico {
-  height: 1.625rem;
-  width: 1.625rem;
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transition: all 0.3s;
@@ -684,6 +686,28 @@ li {
 
 .social__ico_facebook:hover {
   background-image: url("./../images/icons/facebook-copy.svg");
+}
+
+.social__ico_big-size {
+  height: 1.625rem;
+  width: 1.625rem;
+}
+
+.social__ico_little-size {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.footer {
+  margin: 6.25rem 0 3.125rem;
+}
+
+.footer__copywrite {
+  text-align: center;
+}
+
+.forma {
+  color: #1f2336;
 }
 
 .cutaway {
@@ -916,6 +940,13 @@ li {
 
 .contact__link-mail {
   font-size: 1.25rem;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.contact__link-mail:hover {
+  color: var(--color-accent);
 }
 
 @media (min-width: 768px) {
