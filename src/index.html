@@ -7,10 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Jake Midway</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const slider = new ChiefSlider('.slider', {
+            loop: true,
+            autoplay: true,
+            interval: 7000,
+          });
+        });
+      </script>
 </head>
 
 <body>
 
+    <script defer src="./js/slider.js"></script>
     
     
     <div id="sphere-wrap">
@@ -116,8 +126,84 @@
                 <li class="skills__item"><img class="skills__ico" src="images/icons/react.svg"><span></span>React</li>
             </ul>
         </div>
-        
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="working">
+        <div class="container">
+            <h2 class="working__title">Working</h2>
+            
+            
+    <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <!-- Контент 1 слайда -->
+              1
+            </div>
+            <div class="slider__item">
+              <!-- Контент 2 слайда -->
+              2
+            </div>
+            <div class="slider__item">
+              <!-- Контент 3 слайда -->
+              3
+            </div>
+            <div class="slider__item">
+              <!-- Контент 4 слайда -->
+              4
+            </div>
+            <div class="slider__item">
+              <!-- Контент 5 слайда -->
+              5
+            </div>
+          </div>
+        </div>
+        <a href="#" class="slider__control" data-slide="prev"></a>
+        <a href="#" class="slider__control" data-slide="next"></a>
+        <ol class="slider__indicators">
+          <li data-slide-to="0"></li>
+          <li data-slide-to="1"></li>
+          <li data-slide-to="2"></li>
+          <li data-slide-to="3"></li>
+          <li data-slide-to="4"></li>
+        </ol>
+      </div>
+  
+            
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="experience">
         <div class="container">
@@ -205,6 +291,7 @@
         
     <script src="./js/script.js"></script>
     <script src="./js/wizzard.js"></script>
+    
 </body>
 
 </html>

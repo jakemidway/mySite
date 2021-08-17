@@ -14,7 +14,7 @@
 @import './layout/containers';
 
 //libraries
-@import 'libraries/_test.scss';
+@import 'libraries/_slider.scss';
 
 
 //elements; - small BEM  blocks
@@ -35,6 +35,7 @@
 // @import './libraries/bg';
 @import 'sections/cutaway';
 @import './sections/skills';
+@import './sections/working';
 @import './sections/did';
 @import './sections/experience';
 @import './sections/contact';

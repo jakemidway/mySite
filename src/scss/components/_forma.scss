@@ -20,14 +20,15 @@
     &__btn{
         align-self: flex-end;
         padding: px-to-rem(9) px-to-rem(12) px-to-rem(7);
-        background-color: $colorAccentDark;
+        background-color: inherit;
         border: 1px solid $colorAccentDark;
-        color: $colorAccent;
+        color: $colorAccentDark;
         transition: all 0.3s;
         border-radius: 2px;
 
         &:hover{
-            border: 1px solid $colorAccent;
+            background-color: $colorAccentDark;
+            color: $colorText;
         }
     }
 }

@@ -1,11 +1,3 @@
-var btnNav = document.querySelector('.header__btn-nav');
-
-btnNav.onclick = function () {
-    console.log('тест кнопки')
-}
-
-
-
 /**
  * ChiefSlider by Itchief v2.0.0 (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
  * Copyright 2020 - 2021 Alexander Maltsev
