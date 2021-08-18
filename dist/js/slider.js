@@ -4,6 +4,21 @@
  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
  */
 
+
+ document.addEventListener('DOMContentLoaded', function () {
+    const slider = new ChiefSlider('.slider', {
+      loop: false,
+      autoplay: false,
+    //   interval: 7000,
+      swipe: true,
+    });
+  });
+
+
+
+
+
+
  (function() {
     if (typeof window.CustomEvent === 'function' ) return false;
     function CustomEvent(event, params) {
