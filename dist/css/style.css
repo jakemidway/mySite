@@ -668,6 +668,20 @@ li {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+#sphere-wrap {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
+
+#sphere {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
 .logo__text {
   font-size: 1.25rem;
   font-weight: 400;
