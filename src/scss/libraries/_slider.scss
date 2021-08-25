@@ -9,11 +9,37 @@
 
 .slider {
     position: relative;
+
+    &__container {
+        overflow: hidden;
+    }
+
+    &__item {
+        position: relative;
+        flex: 0 0 400px;
+        max-width: 400px;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0 40px 0 0;
+        overflow: hidden;
+    }
+
+    &__item-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    &__text{
+        margin-top: 200px;
+        padding: px-to-rem(40) px-to-rem(20);
+        background: $colorAccentDarkLight;
+        position:relative;
+        z-index: 20;
+        border-bottom: 1px solid $colorAccent;
+    }
 }
 
-.slider__container {
-    overflow: hidden;
-}
 
 .slider__wrapper {
     overflow: visible;
@@ -29,17 +55,8 @@
     transition: none;
 }
 
-.slider__item {
-    flex: 0 0 400px;
-    // max-width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 7rem;
-    margin: 0 40px 0 0;
-  }
+.slider
+  
 
   .slider__item:nth-child(1) {
     background-color: #f44336;
