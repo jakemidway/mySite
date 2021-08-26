@@ -7,6 +7,10 @@
 * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
 */
 
+
+
+
+
 .slider {
     position: relative;
 
@@ -21,22 +25,35 @@
         color: rgba(255, 255, 255, 0.8);
         margin: 0 40px 0 0;
         overflow: hidden;
+        border-radius: 15px 15px 0 0;
+        border-bottom: 1px solid $colorAccent;
+        background: $colorAccentDarkLight;
     }
 
-    &__item-background{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1;
+    &__item-image{
+        overflow: hidden;
+        height: 300px;
+        border-radius: 15px;
+        img{
+            width: 100%;
+        }
     }
     &__text{
-        margin-top: 200px;
-        padding: px-to-rem(40) px-to-rem(20);
+        padding: px-to-rem(64) px-to-rem(32);
         background: $colorAccentDarkLight;
         position:relative;
         z-index: 20;
-        border-bottom: 1px solid $colorAccent;
+    }
+    &__stack{
+        color: $colorAccent;
+        margin-bottom: px-to-rem(32);
+    }
+    &__item-title{
+        font-size: px-to-rem(32);
+        margin-bottom: px-to-rem(32);
+    }
+    &__item-discription{
+        line-height: px-to-rem(32);
     }
 }
 
@@ -55,28 +72,10 @@
     transition: none;
 }
 
-.slider
+
   
 
-  .slider__item:nth-child(1) {
-    background-color: #f44336;
-  }
-
-  .slider__item:nth-child(2) {
-    background-color: #9c27b0;
-  }
-
-  .slider__item:nth-child(3) {
-    background-color: #3f51b5;
-  }
-
-  .slider__item:nth-child(4) {
-    background-color: #03a9f4;
-  }
-
-  .slider__item:nth-child(5) {
-    background-color: #4caf50;
-  }
+  
 /* кнопки влево и вправо */
 
 .slider__control {
