@@ -39,15 +39,22 @@
     }
 
     &__connection {
-        @include flex(row, space-between);
-        align-items: baseline;
+        @include flex(column, space-between);
+        align-items: center;
         font-size: px-to-rem(17);
+        @include for-tablet-landscape-up{
+            @include flex(row, space-between);
+        }
     }
 
     &__mail{
         position: relative;
         transition: all 0.1s ease-in;
+        margin-top: px-to-rem(26);
 
+        @include for-tablet-landscape-up{
+            margin-top: 0;
+        }
         &:hover {
             color: var(--color-accent);
         }

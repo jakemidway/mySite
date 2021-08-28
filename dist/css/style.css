@@ -991,16 +991,16 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.0625rem;
 }
 
@@ -1009,6 +1009,7 @@ li {
   -webkit-transition: all 0.1s ease-in;
   -o-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
+  margin-top: 1.625rem;
 }
 
 .cutaway__mail:hover {
@@ -1188,6 +1189,23 @@ li {
 }
 
 @media (min-width: 576px) {
+  .cutaway__connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .cutaway__mail {
+    margin-top: 0;
+  }
+
   .skills__list {
     display: -webkit-box;
     display: -ms-flexbox;
