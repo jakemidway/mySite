@@ -6,10 +6,16 @@
     }
 
     &__list {
-        @include flex(row, flex-start);
+        @include flex(row, center);
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
         // height: px-to-rem(163);
+        @include for-tablet-landscape-up{
+            @include flex(row, flex-start);
+        }
+        @include for-big-desktop-up{
+            width: 80%;
+        }
     }
 
     &__item {
