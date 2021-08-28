@@ -10,23 +10,42 @@
         margin-bottom: px-to-rem(30);
     }
     &__wrapper{
-        @include flex(row, space-between);
-        align-items: center;
+        @include flex(column, space-between);
+
+        @include for-desktop-up{
+            @include flex(row, space-between);
+            align-items: center;
+        }
         
     }
     &__left-side{
-        width: 50%;
+        
+        @include for-big-desktop-up{
+            width: 50%;
+        }
     }
     &__right-side{
-        width: 50%;
+        width: 100%;
         background-color: #fff;
         color: $colorAccentDark;
+        // @include for-desktop-up{
+
+        // }
+        @include for-big-desktop-up{
+            width: 50%;
+        }
     }
     &__links{
-        @include flex(row, flex-start);
+        @include flex(column, flex-start);
+        @include for-big-desktop-up{
+            @include flex(row, flex-start);
+        }
     }
     &__mail{
-        margin-right: px-to-rem(107);
+        margin-bottom: px-to-rem(26);
+        @include for-big-desktop-up{
+            margin-right: px-to-rem(107);
+        }
     }
     &__text-for-link{
         margin-bottom: px-to-rem(10);
@@ -38,5 +57,11 @@
         &:hover {
             color: var(--color-accent);
         }
+    }
+    &__soc{
+        margin-bottom: px-to-rem(26);
+        @include for-big-desktop-up{
+            margin-bottom: 0;
+        } 
     }
 }

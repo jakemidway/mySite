@@ -1136,24 +1136,17 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contact__left-side {
-  width: 50%;
 }
 
 .contact__right-side {
-  width: 50%;
+  width: 100%;
   background-color: #fff;
   color: #1f2336;
 }
@@ -1162,17 +1155,17 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
 .contact__mail {
-  margin-right: 6.6875rem;
+  margin-bottom: 1.625rem;
 }
 
 .contact__text-for-link {
@@ -1188,6 +1181,10 @@ li {
 
 .contact__link-mail:hover {
   color: var(--color-accent);
+}
+
+.contact__soc {
+  margin-bottom: 1.625rem;
 }
 
 @media (min-width: 576px) {
@@ -1227,11 +1224,56 @@ li {
   .cutaway__cutaway-my-photo {
     display: block;
   }
+
+  .contact__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 1280px) {
   .skills__list {
     width: 80%;
+  }
+
+  .contact__left-side {
+    width: 50%;
+  }
+
+  .contact__right-side {
+    width: 50%;
+  }
+
+  .contact__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .contact__mail {
+    margin-right: 6.6875rem;
+  }
+
+  .contact__soc {
+    margin-bottom: 0;
   }
 }
 
