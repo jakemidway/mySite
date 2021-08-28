@@ -978,6 +978,7 @@ li {
 }
 
 .cutaway__cutaway-my-photo {
+  display: none;
   overflow: hidden;
   --size: 23rem;
   width: var(--size);
@@ -1221,6 +1222,10 @@ li {
   .header__nav-item {
     margin-left: 3.4375rem;
     margin-bottom: 0;
+  }
+
+  .cutaway__cutaway-my-photo {
+    display: block;
   }
 }
 
