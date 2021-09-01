@@ -168,12 +168,12 @@ gulp.task('svgSprite', function () {
 			mode: {
 				stack: {
 					sprite: "../sprite/icons.svg",
-					// example: true
+					example: true
 				}
 			}
 		}))
-		// .pipe(dest(path.build.img))
-		.pipe(dest([srcPath + 'assets/images/']))
+		.pipe(dest(path.build.img))
+		.pipe(dest([srcPath + 'images/']))
 })
 
 
