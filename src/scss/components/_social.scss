@@ -1,10 +1,10 @@
 .social {
-    
-    &_big-size{
+
+    &_big-size {
         width: px-to-rem(246);
     }
-    
-    &_little-size{
+
+    &_little-size {
         width: px-to-rem(192);
     }
 
@@ -14,22 +14,11 @@
 
     &__ico {
         fill: var(--color-text);
-
-    
-        // background-repeat: no-repeat;
-        // background-size: contain;
         transition: all 0.3s;
 
-        // @include social-ico(linkedin);
-        // @include social-ico(git);
-        // @include social-ico(viber);
-        // @include social-ico(instagram);
-        // @include social-ico(facebook);
-
-        &:hover{
+        &:hover {
             fill: var(--color-accent);
         }
-
 
         &_big-size {
             height: px-to-rem(26);
