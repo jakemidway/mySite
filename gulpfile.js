@@ -19,7 +19,7 @@ const imagemin = require("gulp-imagemin"); //для минификации из�
 const webp = require("gulp-webp");
 const webphtml = require("gulp-webp-html");
 const webpcss = require("gulp-webpcss");
-const svgSprite = require("gulp-svg-sprite");
+
 
 
 /* Пути */
@@ -54,12 +54,14 @@ let path = {
 		js: srcPath + "js/**/*.js",
 		img: srcPath + "img/**/*.{jpg,png,svg,gif,ico,webp}"
 	},
-	// clean: "./" + distPath
-	clean: [distPath, "!" + distPath + "images/sprite/icons.svg"]
-	// clean: [distPath, "!" distPath + "assets/images/"]
+	clean: "./" + distPath
+	// clean: [distPath + "css", distPath + "**", distPath + "js",  distPath + "images/**", "!" + distPath + "images/sprite"]
+	// clean: [distPath, "!" + distPath + "images/*.svg"]
 }
 
-
+// gulp.task(test, function () {
+// 	return console.log(rest)
+// })
 
 /* Tasks */
 
@@ -139,16 +141,16 @@ function images() {
 		)
 		.pipe(dest(path.build.img))
 		.pipe(src(path.src.img))
-		.pipe(
-			imagemin({
-				progressive: true,
-				svgPlugins: [{
-					removeViewBox: false
-				}],
-				interlaced: true,
-				optimizationLevel: 3
-			})
-		)
+		// .pipe(
+		// 	// imagemin({
+		// 	// 	progressive: true,
+		// 	// 	// svgPlugins: [{
+		// 	// 	// 	removeViewBox: false,       убивает svg sprite - пришлось убрать
+		// 	// 	// }],
+		// 	// 	interlaced: true,
+		// 	// 	optimizationLevel: 3
+		// 	// })
+		// )
 		.pipe(dest(path.build.img))
 		.pipe(browsersync.stream())
 }
@@ -160,21 +162,6 @@ function fonts() {
 		.pipe(dest(path.build.fonts))
 }
 
-
-// SVG!!
-gulp.task('svgSprite', function () {
-	return gulp.src([srcPath + '/images/iconsforsprite/*.svg'])
-		.pipe(svgSprite({
-			mode: {
-				stack: {
-					sprite: "../sprite/icons.svg",
-					example: true
-				}
-			}
-		}))
-		.pipe(dest(path.build.img))
-		.pipe(dest([srcPath + 'images/']))
-})
 
 
 
