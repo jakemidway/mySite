@@ -8,12 +8,17 @@ const {
 const gulp = require("gulp");
 const autoprefixer = require("gulp-autoprefixer"); // расставляет префиксы для поддержки свойств в разных браузерах
 const groupmedia = require("gulp-group-css-media-queries");
+
+const sass = require('gulp-sass')(require('sass'));
+
+
+
 const cleancss = require("gulp-clean-css");
 const rename = require("gulp-rename"); // для переименования файлов
 const fileinclude = require('gulp-file-include'); //"склеивает" несколько файлов в один
 const del = require("del"); // для удаления файлов и папок
 const browsersync = require("browser-sync").create(); // для запуска сервера и перезагрузки страницы при внесении изменений
-const sass = require("gulp-sass"); // для компиляции sass в css
+
 const uglify = require("gulp-uglify-es").default; // для минификации (сжатия) js-кода. Обратного преобразования нет.
 const imagemin = require("gulp-imagemin"); //для минификации изображений
 const webp = require("gulp-webp");
@@ -88,11 +93,8 @@ function html() {
 /* Для CSS */
 function css() {
 	return src(path.src.scss)
-		.pipe(
-			sass({
-				outputStyle: "expanded"
-			})
-		)
+		
+		.pipe(sass().on('error', sass.logError))
 		.pipe(
 			groupmedia()
 		)
