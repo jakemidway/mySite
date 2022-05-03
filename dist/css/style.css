@@ -947,7 +947,7 @@ li {
   width: var(--size);
   height: var(--size);
   text-align: center;
-  background: url(./../images/header/myfoto.png) 50% 3%/120% no-repeat;
+  background: url(./../images/header/i22.jpg) 50% 3%/120% no-repeat;
 }
 
 .cutaway__connection {
@@ -1258,4 +1258,4 @@ li {
   }
 }
 
-.webp .cutaway__cutaway-my-photo{ background: url(./../images/header/myfoto.webp) 50% 3%/120% no-repeat; }
+.webp .cutaway__cutaway-my-photo{ background: url(./../images/header/i22.webp) 50% 3%/120% no-repeat; }
